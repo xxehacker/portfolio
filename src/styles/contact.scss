@@ -97,10 +97,14 @@
             justify-content: flex-start;
             gap: 1rem;
             align-items: center;
-
+            
+            > h1{
+                font-size: $h3-font-size;
+            }
 
             >h1>a {
                 color: white;
+                font-size: $h3-font-size;
             }
 
             h1:hover,
