@@ -6,12 +6,9 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 0rem;
-    font-size: 1.5rem ;
-
-   
     p {
         color: rgb(0, 0, 0);
-        font-size: 1.2rem;
+        font-size: $p-font-size;
         font-size: bold;
         font-weight: 500;
     &:hover {
