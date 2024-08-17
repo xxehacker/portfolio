@@ -238,11 +238,18 @@
     }
 
     .procard > .pro-details > button {
-        width: 50%;
+        width: 40%;
+        font-size: $h4-font-size;
+        font-weight: 600;
     }
 }
 
 @media only screen and (max-width:500px) {
+
+
+    .procard > .pro-details > button {
+        width: 60%;
+    }
 
     .allprojects > .buttom {
 
