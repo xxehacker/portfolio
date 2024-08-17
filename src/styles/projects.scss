@@ -1,0 +1,312 @@
+@import 'colors';
+
+.projects{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(rgb(0, 0, 0),rgb(7, 1, 1),rgba(0, 2, 8, 0.909));
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+
+    > .top {
+        
+        text-align: center;
+        width: 100%;
+        
+        > h1{
+          color: $newbgcolor;
+          font-size: $h2-font-size;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+    }
+    > .buttom{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2%;
+        flex-wrap: wrap;
+        
+    }
+    > .more-btn-div{
+        
+           > .animated-button {
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                padding: 16px 36px;
+                border: 4px solid;
+                border-color: transparent;
+                font-size: 16px;
+                background-color: inherit;
+                border-radius: 100px;
+                font-weight: 600;
+                color: greenyellow;
+                box-shadow: 0 0 0 2px $newbgcolor;
+                cursor: pointer;
+                overflow: hidden;
+                transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+              }
+              
+              .animated-button svg {
+                position: absolute;
+                width: 24px;
+                fill: $newbgcolor;
+                z-index: 9;
+                transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+              }
+              
+              .animated-button .arr-1 {
+                right: 16px;
+              }
+              
+              .animated-button .arr-2 {
+                left: -25%;
+              }
+              
+              .animated-button .circle {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 20px;
+                height: 20px;
+                background-color: $newbgcolor;
+                border-radius: 50%;
+                opacity: 0;
+                transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+              }
+              
+              .animated-button .text {
+                position: relative;
+                z-index: 1;
+                transform: translateX(-12px);
+                transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+              }
+              
+              .animated-button:hover {
+                box-shadow: 0 0 0 12px transparent;
+                color: #212121;
+                border-radius: 12px;
+              }
+              
+              .animated-button:hover .arr-1 {
+                right: -25%;
+              }
+              
+              .animated-button:hover .arr-2 {
+                left: 16px;
+              }
+              
+              .animated-button:hover .text {
+                transform: translateX(12px);
+              }
+              
+              .animated-button:hover svg {
+                fill: #212121;
+              }
+              
+              .animated-button:active {
+                scale: 0.95;
+                box-shadow: 0 0 0 4px $newbgcolor;
+              }
+              
+              .animated-button:hover .circle {
+                width: 220px;
+                height: 220px;
+                opacity: 1;
+              }
+              a{
+                color: white;
+              }
+              
+   
+    }
+
+}
+
+// card css start ----------------
+
+
+.card {
+    width:18rem;
+    height: 25rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(50px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px -1px 5px 2px white;
+    gap: 12rem;
+    border-radius: 5%;
+    flex-wrap: wrap;
+    // background-image: conic-gradient(#82aa0a,#010813,rgba(20, 1, 1, 0.765),#010435,#010246,#1ac20a);
+    
+    
+    > .pro-main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        border: 1px solid white;
+        border-radius: 5%;
+  
+        
+        > .pro-img-1 {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            > img {
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 1rem;
+              }
+
+        }
+        > .pro-details-1 {
+            width: 100%;
+            height:50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            gap: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+            > h3{
+              font-size: $h3-font-size;
+            }
+
+            > p{
+              font-size: $p-font-size!important;
+              line-height: 1.5;
+              text-align: center;
+            }
+
+            // > button{
+            //     width: 60%;
+            //     min-height: 2.5rem;
+            //     color: white;
+            //     font-weight: 600;
+            //     background: linear-gradient(to right, #FF204E, #FF008E);
+            //     border-radius: 2%;
+                
+            // }
+            // > button:hover {
+            //     background: linear-gradient(to right,#ff0890, #0716ee, );
+            //     color: $first;
+            //     transition: all 0.5s ease-in-out;
+            //     transform: scaleX(1.2);
+            //     cursor: pointer;
+            // }
+            
+            .button-85 {
+              padding: 1em 2.5em;
+              border: none;
+              outline: none;
+              color: rgb(255, 255, 255);
+              background: #111;
+              cursor: pointer;
+              position: relative;
+              z-index: 0;
+              border-radius: 10px;
+              user-select: none;
+              -webkit-user-select: none;
+              touch-action: manipulation;
+              font-size: $p-font-size;
+            }
+            
+            .button-85:before {
+              content: "";
+              background: linear-gradient(
+                45deg,
+                #ff0000,
+                #ff7300,
+                #fffb00,
+                #48ff00,
+                #00ffd5,
+                #002bff,
+                #7a00ff,
+                #ff00c8,
+                #ff0000
+              );
+              position: absolute;
+              top: -2px;
+              left: -2px;
+              background-size: 400%;
+              z-index: -1;
+              filter: blur(5px);
+              -webkit-filter: blur(5px);
+              width: calc(100% + 4px);
+              height: calc(100% + 4px);
+              animation: glowing-button-85 20s linear infinite;
+              transition: opacity 0.3s ease-in-out;
+              border-radius: 10px;
+            }
+            
+            @keyframes glowing-button-85 {
+              0% {
+                background-position: 0 0;
+              }
+              50% {
+                background-position: 400% 0;
+              }
+              100% {
+                background-position: 0 0;
+              }
+            }
+            
+            .button-85:after {
+              z-index: -1;
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background: #222;
+              left: 0;
+              top: 0;
+              border-radius: 10px;
+            }
+            
+
+            > p {
+                font-size: smaller;
+            };
+
+        }
+    }
+}
+
+
+.card:hover {
+    background: linear-gradient(to top, #ff204da7, #e30780b3,rgb(204, 201, 201));
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+@media only screen and (max-width:500px) {
+  .projects > .top > h1 {
+      font-size: $media500;
+   }
+}

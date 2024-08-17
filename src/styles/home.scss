@@ -1,0 +1,206 @@
+@import './colors';
+
+
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to left, $dark2 , $backcolor);
+    border: $blue;
+    color: $first;
+    padding: 0rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    >main {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        // border: 2px solid red;
+
+        >.left {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            height: 100%;
+            // border: 2px solid red;
+
+            >.heading {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 80%;
+                // border: 2px solid cyan;
+
+                >h1 {
+                    text-transform: uppercase;
+                    font-size: $h1-font-size;
+                    text-align: center;
+                    font-weight: bold;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    background: linear-gradient(to right, #FF204E, #FF008E);
+                    background-clip: text;
+                    color: transparent;
+                }
+
+                h1::selection {
+                    background-color: $second;
+                    color: $green;
+                }
+
+
+                >.paragraph {
+                    text-align: justify;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: 500;
+                    line-height:1.5;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: $yellow;
+                    font-size: $p-font-size;
+                   
+                }
+
+                .paragraph::selection {
+                    background-color: $second;
+                    color: white;
+                }
+
+            }
+
+
+            >.socials {
+                display: flex;
+                gap: 1.5rem;
+                width: 80%;
+                align-items: center;
+                justify-content: space-evenly;
+                // border: 2px solid cyan;
+            }
+
+        }
+
+        >.right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border: 2px solid red;
+
+            >img {
+                width: 80%;
+                height: 80%;
+                object-fit: fill;
+            
+            }
+
+
+        }
+
+
+    }
+
+
+
+    h1 {
+        font: 400 5rem $text1;
+    }
+
+    p {
+        font: 900 1rem $text1;
+    }
+
+}
+
+// 984px
+
+@media only screen and (max-width: 984px) {
+
+    .home>main {
+        flex-direction: column-reverse;
+        gap: 1rem;
+
+
+        >.left,
+        >.right {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+           
+
+            
+
+            >.heading,
+            .paragraph,
+            .socials {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            
+               
+
+
+            }
+            .heading > p{
+                font-size: $p-font-size;
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 500;
+                
+            }
+
+        }
+
+    }
+
+
+}
+
+
+// 822px
+
+@media only screen and (max-width: 822px) {
+
+    .home>main>.left>.heading>h1 {
+        font-size: 3rem;
+    }
+
+}
+
+
+@media only screen and (max-width:500px){
+    .home>main {
+        padding: 0.1rem;
+
+        .left .heading > h1{
+            font-size: 2.2rem;
+        }
+        .left .heading > p{
+            font-size: 0.8rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        
+        >.left .heading,
+        .paragraph,
+        .socials {
+               
+            width: 100%;
+
+         }
+
+
+    }
+}

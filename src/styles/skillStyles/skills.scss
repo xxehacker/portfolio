@@ -1,0 +1,54 @@
+@import '../colors.scss';
+
+
+.skills {
+    width: 100%;
+    min-height:100vh;
+    background:linear-gradient(rgb(0, 0, 0),rgb(1, 1, 84),rgb(0, 0, 0));
+    color: $first;
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+
+    > .top{
+
+        width: 100%;
+        height: calc(100% - 90%);
+
+        > h1{
+            font-size: $h2-font-size;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: $newbgcolor;
+            
+        }
+
+    }
+    
+    > .buttom{
+       
+            // border: 2px solid red;
+            width: 100%;
+            height: calc(100% - 10%);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 3%;   
+            gap: 2rem; 
+ 
+
+    }
+    
+
+}
+
+
+
+@media only screen and (max-width:500px) {
+    .skills > .top > h1 {
+        font-size: $media500;
+     }
+  }

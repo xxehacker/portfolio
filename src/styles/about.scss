@@ -1,0 +1,114 @@
+@import 'colors';
+
+.about{
+    display: flex;
+    width: 100%;
+    min-height:100vh;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to left ,  $backcolor,$dark2);
+    padding: 1rem 2rem 1em 2rem;
+    gap: 1rem;
+    // border: 2px solid red;
+
+
+    > .MyPhoto {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 2px solid rgb(0, 255, 47);
+
+        > img {
+            width: 80%;
+            height: 100%;
+            transform: translateY(20px) scale(1.1) rotate(10deg);
+            border-radius: 20%;
+            filter: blur(0.5px) brightness(1) contrast(1) grayscale(100%) sepia(20%);
+            transition: all 5s ease-in;
+
+     
+        }
+        > img:hover {
+            transform: translateY(20px) scale(1.1) rotate(-20deg);
+            cursor: pointer;
+            filter:brightness(1);
+            transition: all 1s ease-in;
+           
+           
+            
+
+        }
+    }
+
+    > .description{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        text-align: justify;
+        >h1 {
+            font-size:$h2-font-size;
+            font-weight: 700;
+            background: linear-gradient(to right, #FF204E, #FF008E);
+            background-clip: text;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: transparent;
+   
+        }
+
+        h1::selection{
+            background-color: $second;
+            color: $green;
+        }
+
+        >.p{
+            color: $first;
+            font-size:$p-font-size;
+            line-height: 1.5;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        >.p::selection {
+            // background-color: $yellow;
+            color: $yellow;
+        }
+        >.p::first-letter {
+            color: red;
+            font-size: 1.5rem;
+        }
+
+    }
+
+}
+
+// 984px
+
+@media only screen and (max-width: 984px) {
+
+    .about {
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        > .MyPhoto  , > .description{
+            width: 100%;
+
+            > img {
+                width:60%;
+            }
+
+        }
+
+    }
+
+
+}
+@media only screen and (max-width:500px) {
+    .about > .description > h1 {
+        font-size: $media500;
+        text-align: center;
+        margin-top:1rem;
+     }
+  }

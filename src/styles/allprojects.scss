@@ -1,0 +1,272 @@
+@import 'colors';
+
+.allprojects{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(#0A192F,#38005C,#0A192F);
+    // background-image: conic-gradient(#0A192F,#38005C,#0A192F);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    z-index: -200;
+   
+    > .top {    
+        text-align: center;
+        width: 100%;
+        height: 20%;
+        > h1 {
+            font-size: $h2-font-size;
+            background: linear-gradient(to right, #ef0635, #de037ba8);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: transparent;
+            background-clip: text;
+        }
+    }
+    > .buttom{
+        width: 100%;
+        height: 80%;
+        z-index: 1;
+        
+    }
+
+}
+
+
+
+//  ProCard
+
+.procard{
+    width: 100%;
+    min-height: 18rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+
+    
+    > .pro-img{
+        width: 40%;
+        min-height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        filter: blur(50%) brightness(200%) contrast(20%);
+        background: transparent;
+        &:hover{
+            transform: translateY(5%);
+            transition: all 0.5s ease;
+        }
+        
+
+        > img {
+            width: 100%;
+            height: 100%;  
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            filter:blur(0.01rem)  brightness(100%) contrast(2);            
+        
+        }
+       
+    }
+    
+    > .pro-details{
+        width: 40%;
+        min-height: inherit;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1%;
+        background: linear-gradient(to right , #011b3f , #000408);
+        position: relative;
+        border-radius: 1rem;
+        cursor: grab;
+        border: 2px solid #02357d;
+        
+        &:hover{
+            transform: translateY(-5%);
+            transition: all 0.5s ease;
+        }
+
+        > h3{
+            font-size:1.1rem;
+            background-color: rgba(252, 25, 237, 0.6);
+            padding: 2%;
+            border-radius: 2rem;
+            text-transform: uppercase;
+            opacity: 0.9;
+            border: 2px solid #fff;
+            filter: blur(0.03rem);
+            
+        }
+        > h2 {
+            font-size:1.8rem;
+            
+            &::first-letter{
+            color: $newbgcolor;
+            font-size: 2.2rem;
+            }
+
+            &::selection{
+                color: $newbgcolor;
+            }
+        }
+
+        > p{
+            font-size:1.1rem;
+        }
+        > button{
+            width: 40%;
+            padding: 2.5%;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        > a{
+            color: black;
+        }
+
+        }
+
+    }
+}
+
+
+// animation 
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.pro-details::after , .pro-details::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    // background-image: conic-gradient(red,blue,green,yellow,gold,black,white);
+    background-image: conic-gradient(from var(--angle) ,transparent 40% , red,blue,green,yellow,gold,black,white,red,blue,green,yellow,gold,black,white);
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 4px;
+    border-radius: 1rem;
+    animation: 3s spin linear infinite;
+}
+
+.pro-details::before{
+    filter: blur(1.5rem);
+    opacity: 0.8;
+
+}
+@keyframes spin {
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+}
+
+// hover 
+
+.pro-details:hover::after , .pro-details:hover::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle) ,transparent 100%,rgba(0, 0, 0));
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 1px;
+    border-radius: 1rem;
+    animation: 3s spin linear infinite;
+    opacity: 0;
+}
+
+.pro-details:hover::before{
+    filter: blur(2rem);
+    opacity: 0.5;
+
+}
+
+
+@media only screen and (max-width: 970px) {
+    
+    .procard{
+       flex-direction: column;
+        
+        >  .pro-img , .pro-details {
+            width: 80%;
+        
+            > button{
+                width: 30%;
+            }
+            
+        }
+
+
+    }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .procard{
+        justify-content: center;
+        align-items: center;
+        gap: 0.1rem;
+        text-align: center;
+    }
+
+    .procard > .pro-details {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .procard > .pro-details > button {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    .allprojects > .buttom {
+
+        margin-bottom: 1rem;
+        padding: 0;
+            
+    }
+
+    .allprojects > .top > h1 {
+        font-size: $media500;
+        margin-top: 1rem;
+     }
+  }
+
+
+  @media only screen and (max-width:375px) {
+    
+    .procard {
+        justify-content: center;
+        padding:0;
+    }
+
+    .procard > .pro-img, .procard .pro-details {
+        width: 90%;
+    }
+
+  }

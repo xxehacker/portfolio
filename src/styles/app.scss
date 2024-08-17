@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+
+}
+body {
+    padding: 0.5rem 2rem;
+    background-color: azure;
+}
+
+// body::-webkit-scrollbar{
+//     background-color: transparent;
+// }
+
+// body::-webkit-scrollbar-thumb{
+//     border-radius: 20px;
+//     background: linear-gradient(rgb(41, 159, 1),green,rgb(197, 194, 0));
+// }

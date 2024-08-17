@@ -1,0 +1,64 @@
+@import '../colors.scss';
+
+.skillDiv{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 1%;
+    border-radius: 10%;
+    // background-color: rgba(22, 21, 21, 0.765);
+    background-image: conic-gradient(#030982,#010813,rgba(20, 1, 1, 0.765),#010435,#010246,#050ec4);
+    backdrop-filter: blur(50px);
+    box-shadow: inset rgba(16, 6, 6, 0.35) 0px -1px 1px -5px ;
+    border: 1px solid white;
+    opacity: 0.9;
+
+    > .top{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 2px solid red;
+
+        > img {
+            width: 50%;
+            height: 60%;
+            object-fit: fill;
+        }
+
+    }
+    > .buttom{
+        
+        width: 100%;
+        height:39%;
+        // border: 2px solid greenyellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+        text-transform: capitalize;   
+       
+    }
+
+}
+
+
+.skillDiv:hover {
+    background-image: conic-gradient(#050ec4,#030982,#010813,rgba(20, 1, 1, 0.765),#010435,#010246,);
+    cursor: pointer;
+    opacity:1;
+    filter: contrast(1.5) brightness(1.2);
+}
+
+
+
+@media only screen and (max-width:950px) {
+    .skillDiv{
+        width: 12rem;
+        height:  12rem;
+    }
+}

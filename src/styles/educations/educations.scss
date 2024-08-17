@@ -1,0 +1,89 @@
+@import '../colors.scss';
+
+.educations {
+    width: 100%;
+    min-height:100vh;
+    background-color: rgb(22, 16, 30);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: -200;
+    // border: 2px solid red;
+   
+    
+    
+    > h1{
+        
+        font-size: $h2-font-size;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #FF195B; 
+        text-align: center;
+        padding: 0.5%;
+        
+         
+    }
+
+    > .inner-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        > .left{
+            height: 100%;
+            width: 49%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            >img {
+                width: 70%;
+                height: 70%;
+            }
+        }
+    
+        > .right{
+    
+            width: 49%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            z-index: 1;
+        }
+
+    }
+
+    
+}
+
+
+
+
+@media only screen and (max-width: 984px) {
+
+    .educations .inner-div {
+        flex-direction: column;
+        padding: 3%;
+
+        > .left , .right{
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        
+
+    }
+
+
+}
+@media only screen and (max-width:500px) {
+    .educations > h1 {
+        font-size: $media500;
+        margin-top: 1rem;
+     }
+  }
