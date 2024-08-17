@@ -83,7 +83,7 @@ function Contact() {
           <div className='email'>
             <IconContext.Provider value={{ className: 'RIcons' }}>
 
-              <MdMarkEmailRead size={"2rem"} />
+              <MdMarkEmailRead size={"1.5rem"} />
 
             </IconContext.Provider>
 
@@ -94,7 +94,7 @@ function Contact() {
 
             <IconContext.Provider value={{ className: 'RIcons' }}>
 
-              <IoIosContact size={"2rem"} />
+              <IoIosContact size={"1.5rem"} />
 
             </IconContext.Provider>
             <h1>+91-7099550167</h1>
@@ -102,7 +102,7 @@ function Contact() {
           <div className='address'>
             <IconContext.Provider value={{ className: 'RIcons' }}>
 
-              <FaLocationDot size={"2rem"} />
+              <FaLocationDot size={"1.5rem"} />
 
             </IconContext.Provider>
 
