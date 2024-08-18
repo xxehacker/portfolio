@@ -106,7 +106,7 @@ function Contact() {
 
             </IconContext.Provider>
 
-            <h1>Middle Badda, Dhaka, Bangladesh - 1212 </h1>
+            <h1>Guwahati , Assam </h1>
 
           </div>
           <div className='socialIcons'>
