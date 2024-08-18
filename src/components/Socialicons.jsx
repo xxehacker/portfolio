@@ -5,11 +5,11 @@ const Socialicons = () => {
   const links = [
     { 
       domain: 'https://www.x.com/',
-      path: 'xxehacker',
+      path: 'xxehacker0x1',
     },
     { 
       domain: 'https://www.instagram.com/',
-      path: 'mridupawan_0x1',
+      path: 'mridupawan__0x1',
     },
     { 
       domain: 'https://www.github.com/',
