@@ -158,7 +158,9 @@
                 text-align: center;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 font-weight: 500;
-                
+                font-size:$p-font-size;
+                line-height: 1.5;
+                            
             }
 
         }
@@ -180,6 +182,16 @@
 }
 
 
+@media only screen and (max-width:600px) {
+
+    .home > main > .left .socials{
+        gap: 5px;
+    }
+
+}
+
+
+
 @media only screen and (max-width:500px){
     .home>main {
         padding: 0.1rem;
@@ -188,16 +200,17 @@
             font-size: 2.2rem;
         }
         .left .heading > p{
-            font-size: 0.8rem;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+            font-size:0.9rem;
+                
         }
-
         
         >.left .heading,
         .paragraph,
         .socials {
                
             width: 100%;
+    
 
          }
 
