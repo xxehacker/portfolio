@@ -13,9 +13,11 @@ function Projects() {
         <h1>Projects</h1>
       </div>
       <div className='buttom'>
-        <Card img={projects[0].img} name={projects[0].name} detail={projects[0].detail} btnText={projects[0].btnText} btnUrl={projects[0].btnUrl}/>
-        <Card img={projects[2].img} name={projects[2].name} detail={projects[2].detail} btnText={projects[2].btnText} btnUrl={projects[1].btnUrl}/>
-        <Card img={projects[1].img} name={projects[1].name} detail={projects[1].detail} btnText={projects[1].btnText} btnUrl={projects[2].btnUrl} />
+
+        {
+          projects.map((project)=>( <Card img={project.img} name={project.name} detail={project.detail} btnText={project.btnText} btnUrl={project.btnUrl} />))
+        }
+
       </div>
 
       <div className='more-btn-div'>
