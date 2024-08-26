@@ -318,7 +318,7 @@ Open https://localhost:5173 in your browser to view the project
 
 Contributions are welcome! Here are several ways you can contribute:
 
-- **[Submit Pull Requests](https://github.com/xxehacker/portfolio/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **[Submit Pull Requests](https://github.com/xxehacker/portfolio/pulls)**: Review open PRs, and submit your own PRs.
 - **[Report Issues](https://github.com/xxehacker/portfolio/issues)**: Submit bugs found or log feature requests for Portfolio.
 
 <details closed>
