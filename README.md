@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./static/home.webp" alt="xxehacker" width="200" />
+  <img src="./public/home.webp" alt="xxehacker" width="200" />
 </p>
 <p align="center">
     <h1 align="center">PORTFOLIO</h1>
@@ -52,12 +52,12 @@
 
 | Home | About| Skills| Project|
 |---------|--------|--------|------|
-|<img src="./static/home.png" width='200' height="200"> | <img src="./static/about.png" width='200' height="200"> | <img src="./static/skills.png" width='200' height="200"> | <img src="./static/project.png" width='200' height="200"> |
+|<img src="./public/home.png" width='200' height="200"> | <img src="./public/about.png" width='200' height="200"> | <img src="./public/skills.png" width='200' height="200"> | <img src="./public/project.png" width='200' height="200"> |
 
 
 | Contact | Education|All-Projects |
 |---------|--------|------|
-|<img src="./static/contact.png" width='200' height="200">|<img src="./static/education.png" width='200' height="200">|<img src="./static/allprojects.png" width='200' height="200">|
+|<img src="./public/contact.png" width='200' height="200">|<img src="./public/education.png" width='200' height="200">|<img src="./public/allprojects.png" width='200' height="200">|
 
 
 
